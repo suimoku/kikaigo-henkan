@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>第四世界のアレ</title>
+    <script src='js/bignumber.js'></script>
+    <script src='js/hex.js'></script>
+</head>
+
+<body onload="init()">
+    <h1>第四世界の機械語-平仮名変換</h1>
+    <div class="row">
+        <div class="col-sm-8" style="display: table">
+            <div class="panel panel-primary">
+                <div class="panel-body">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th>16進数</th>
+                                <td><input type="text" id="hex" size=100 value="208D350" onKeyUp="onChangeHex()"></td>
+                                <td>
+                                    <font color="red"><label id="hex_alert"></label></font>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>10進数</th>
+                                <td><label id="decimal" size=100></label></td>
+                            </tr>
+                            <tr>
+                                <th>かな</th>
+                                <td><input type="text" id="kana" size=100 value="" onKeyUp="onChangeKana()"></td>
+                                <td>
+                                    <font color="red"><label id="kana_alert"></label></font>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
